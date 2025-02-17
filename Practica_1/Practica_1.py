@@ -1,45 +1,51 @@
 
-
-Texto   = input("Dame un texto para analizar: ")
+Texto = input("Dame un texto para analizar: ")
 Tocapelotas = 0
 
 while True:
-  Letra_1 = input( " Ahora dame una letra: ")
-  if Letra_1.isalpha() and len(Letra_1) == 1:
-    print("Letra correcta, puedes continuar")
-    break
-  elif Tocapelotas == 3:
-    print("te voy a romper el pc ya!")
-    break
-
-  else:
-    print ("No me tomes el pelo y mete una letra,solo UNA letra!")
-    Tocapelotas = Tocapelotas+1
-
-
- 
+    Letra_1 = input("Ahora dame una letra (y no me hagas enfadar...): ")
+    if Letra_1.isalpha() and len(Letra_1) == 1:
+        print("¡Bien! Una elección sabia.")
+        break
+    elif Tocapelotas == 3:
+        print("Las luces parpadearán... y tu PC hará ruidos extraños... ¡elige bien! 😈")
+        break
+    else:
+        print("Mmm... Eso no es una letra. ¿Sabes lo que es una letra? 🤨")
+        Tocapelotas += 1
 
 while True:
-  Letra_2 = input( " Ahora dame la segunda letra, pero no juegues conmigo eh: ")
-  if Letra_2.isalpha() and len(Letra_2) == 1:
-    print("Letra correcta, puedes continuar")
-    break
-  elif Tocapelotas == 3:
-    print("voy a quemarte la casa joder")
-    break
-  else:
-    print ("Te dije que no juegues conigo,pon una letra ya")
-    Tocapelotas = Tocapelotas+1
-
+    Letra_2 = input("Dame otra letra. Pero ojo... te estoy vigilando. 👀: ")
+    if Letra_2.isalpha() and len(Letra_2) == 1:
+        print("Bien, bien... Vas por buen camino.")
+        break
+    elif Tocapelotas == 3:
+        print("Acabas de desbloquear el nivel experto de sustos. 🎃")
+        break
+    else:
+        print("¿En serio? ¿Otra vez? Mira que hay consecuencias... ⏳")
+        Tocapelotas += 1
 
 while True:
-  Letra_3 = input( " Ahora dame la tercera letra y tengamos la fiesta en paz eh: ")
-  if Letra_3.isalpha() and len(Letra_3) == 1:
-    print("Letra correcta, puedes continuar")
-    break
-  elif Tocapelotas == 3:
-    print("Voy a matar a tu perro y follarle el culo")
-    break
-  else:
-    print ("Pon una puta letraaaaaaaaa!!!!")
-    Tocapelotas = Tocapelotas+1
+    Letra_3 = input("Última letra... Elige con sabiduría, o podrías despertar algo... 😨: ")
+    if Letra_3.isalpha() and len(Letra_3) == 1:
+        print("¡Perfecto! Has sobrevivido... por ahora. 😏")
+        break
+    elif Tocapelotas == 3:
+        print("Se oyen golpes en la puerta... demasiado tarde. 💀")
+        break
+    else:
+        print("Última oportunidad antes de que el teclado empiece a moverse solo... 👻")
+        Tocapelotas += 1
+
+
+"""verificar su contenido:
+a través de las palabras clave
+in
+y
+not in
+. Elresultado de esta verificación es un booleano (
+True
+/
+False
+)."""
