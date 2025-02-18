@@ -38,6 +38,16 @@ while True:
         print("Última oportunidad antes de que el teclado empiece a moverse solo... 👻")
         Tocapelotas += 1
 
+MiniTexto = Texto.lower()
+
+Repite_L1 = MiniTexto.count(Letra_1)
+print(f"Tu primera letra se repite :{Repite_L1} veces")
+
+Repite_L2 = MiniTexto.count(Letra_2)
+print(f"Tu segunda letra se repite :{Repite_L2} veces")
+
+Repite_L3 = MiniTexto.count(Letra_3)
+print(f"Tu tercera letra se repite :{Repite_L3} veces")
 
 """verificar su contenido:
 a través de las palabras clave
