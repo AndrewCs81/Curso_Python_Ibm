@@ -38,16 +38,47 @@ while True:
         print("Última oportunidad antes de que el teclado empiece a moverse solo... 👻")
         Tocapelotas += 1
 
+
+# Sacando el numero de repeticiones de letras
+
 MiniTexto = Texto.lower()
 
 Repite_L1 = MiniTexto.count(Letra_1)
-print(f"Tu primera letra se repite :{Repite_L1} veces")
+print(f"Tu primera letra '{Letra_1}' se repite :{Repite_L1} veces")
 
 Repite_L2 = MiniTexto.count(Letra_2)
-print(f"Tu segunda letra se repite :{Repite_L2} veces")
+print(f"Tu segunda letra '{Letra_2}' se repite :{Repite_L2} veces")
 
 Repite_L3 = MiniTexto.count(Letra_3)
-print(f"Tu tercera letra se repite :{Repite_L3} veces")
+print(f"Tu tercera letra '{Letra_3}'se repite :{Repite_L3} veces")
+
+
+## Sacando el numero de palabras
+
+palabras = MiniTexto.split() # Divide el texto en una lista de palabras
+Cpalabras = len(palabras)
+print(f"El texto elegido tiene : {Cpalabras} palabras")
+
+## Busco la primera y ultima palabra 
+
+print(f"La primera palabra es '{palabras[0]}' y la ultima es '{palabras[-1]}'")
+
+## Busco las palabras mas repetidas
+
+conteo  = {}
+for palabra in palabras:
+    if palabra in conteo :
+        conteo[palabra] += 1 # Si la palabra ya está, sumamos 1
+    else :
+        conteo[palabra] = 1 # Si no está, la iniciamos en 1
+
+for palabra, cantidad in conteo.items():
+    if cantidad > 3:
+        print(palabra, cantidad)       
+
+
+
+
 
 """verificar su contenido:
 a través de las palabras clave
