@@ -1,4 +1,4 @@
-palabra = 'ordenador'
+"""palabra = 'ordenador'
 resultado = palabra[1]  # Obtiene la segunda letra de la palabra ('r')
 #print(resultado)
 
@@ -58,3 +58,7 @@ print(resultado)
 
 sorteo.add('Damian')  # Agrega un nuevo elemento al conjunto
 print(sorteo)
+
+
+"""
+
