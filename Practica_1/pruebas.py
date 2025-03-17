@@ -59,6 +59,47 @@ print(resultado)
 sorteo.add('Damian')  # Agrega un nuevo elemento al conjunto
 print(sorteo)
 
+<<<<<<< HEAD
 
+=======
+num1 = 36
+num2 = 17
+
+mi_bool = num1 >= num2
+print(mi_bool)
+
+
+import math
+num1 = math.sqrt(25)
+num2 = 5
+mi_bool = num1==num2
+print(mi_bool)
+
+
+num1 = 64*3
+num2 = 24*8
+mi_bool = num1 != num2
+print(mi_bool)
+
+num1 = 36
+num2 = 72/2
+num3 = 48
+mi_bool = (num1 > num2) and (num1 < num3)
+print(mi_bool)
+
+num1 = 36
+num2 = 72/2
+num3 = 48
+mi_bool = (num1 > num2) or (num1 < num3)
+print(mi_bool)
+
+
+frase = "Cuando algo es lo suficientemente importante, lo haces incluso exito si las probabilidades de que salga bien no te acompañan  "
+palabra1 = "éxito"
+palabra2 = "tecnología"
+
+mi_bool =  not ( palabra1 and  palabra2 in frase)
+print(mi_bool)
+>>>>>>> 16b40b3 (Guardado antes de cambiar de rama)
 """
 
